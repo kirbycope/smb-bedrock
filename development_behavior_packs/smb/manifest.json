@@ -1,0 +1,27 @@
+{
+	"format_version": 2,
+	"header": {
+		"name": "Super Mario Bros",
+		"description": "Super Mario Bros Behavior Pack",
+		"uuid": "1869baa6-4148-1900-58c5-6c8ce5275931",
+		"version": [1, 0, 0],
+		"min_engine_version": [1, 20, 30]
+	},
+	"metadata": {
+		"authors": ["kirbycope"]
+	},
+	"modules": [
+		{
+			"description": "Behavior",
+			"version": [1, 0, 0],
+			"uuid": "a86a3df5-0d00-7168-9738-9cbbc1fe7a10",
+			"type": "data"
+		}
+	],
+	"dependencies": [
+		{
+			"uuid": "caeae8d1-61ae-f42f-2216-c98b4ab7945c",
+			"version": [1, 0, 0]
+		}
+	]
+}
