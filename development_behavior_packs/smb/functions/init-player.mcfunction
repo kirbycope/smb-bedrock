@@ -1,5 +1,7 @@
-weather clear 9999
-tp @s 0 65 0
+gamerule sendcommandfeedback false
+gamerule dodaylightcycle false
+gamerule doweathercycle false
+tp @s 3 65 0
 
 # "Loading" screen
 scoreboard objectives add timer dummy
