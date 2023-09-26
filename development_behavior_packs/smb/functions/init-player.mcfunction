@@ -1,8 +1,13 @@
 weather clear 9999
+tp @s 0 65 0
 
 # "Loading" screen
 scoreboard objectives add timer dummy
 scoreboard players set @s timer 1
+
+# World 1-1
+scoreboard objectives add w1l1 dummy
+scoreboard players set @s w1l1 0
 
 # SMB Buffs
 effect @s invisibility 9999 1 true
