@@ -1,11 +1,12 @@
-gamerule sendcommandfeedback false
+#gamerule sendcommandfeedback false
 gamerule dodaylightcycle false
 gamerule doweathercycle false
 tp @s 3 65 0
+clear @s
 
 # "Loading" screen
 scoreboard objectives add timer dummy
-scoreboard players set @s timer 1
+tag @s add intro
 
 # World 1-1
 scoreboard objectives add w1l1 dummy
