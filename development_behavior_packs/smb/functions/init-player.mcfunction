@@ -6,6 +6,7 @@ clear @s
 
 # "Loading" screen
 scoreboard objectives add timer dummy
+scoreboard players set @s timer 0
 tag @s add intro
 
 # World 1-1
