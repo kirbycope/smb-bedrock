@@ -3,5 +3,10 @@
         "flipbook_texture": "textures/blocks/glazed_terracotta_brown",
         "atlas_tile": "brown_glazed_terracotta",
         "ticks_per_frame": 4
+    },
+    {
+        "flipbook_texture": "textures/blocks/sculk_vein",
+        "atlas_tile": "sculk_vein",
+        "ticks_per_frame": 4
     }
 ]

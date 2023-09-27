@@ -6,10 +6,12 @@ execute at @e[type=armor_stand,name=main] positioned ^1^^ as @e[r=0.9] run repla
 execute at @e[type=armor_stand,name=main] positioned ^-1^^ as @e[r=0.9] run replaceitem entity @s slot.armor.head 1 kirbycope:smb_hat_0
 execute at @a[tag=init] run tp @e[name=main,c=1] ~ ~ ~ facing ^ ^ ^10
 
-# ? Block
+# ⍰
 execute at @a[tag=init] if block ~ ~1.8 ~ minecraft:brown_glazed_terracotta run function lotto
-# (Hidden) ? Block
+# ⍰ (Hidden) 
 execute at @a[tag=init] if block ~ ~1.8 ~ minecraft:glow_lichen run function lotto
+# 🪙
+execute at @a[tag=init] if block ~ ~ ~ minecraft:sculk_vein run function lotto
 
 # Level 1 - Intro ("Loading Screen")
 execute as @a[tag=intro] run function intro
