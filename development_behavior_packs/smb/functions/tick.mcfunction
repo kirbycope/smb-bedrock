@@ -12,6 +12,7 @@ execute at @a[tag=init] if block ~ ~1.8 ~ minecraft:brown_glazed_terracotta run 
 execute at @a[tag=init] if block ~ ~1.8 ~ minecraft:glow_lichen run function lotto
 # 🪙
 execute at @a[tag=init] if block ~ ~ ~ minecraft:sculk_vein run function lotto
+execute at @a[tag=init] if block ~ ~1 ~ minecraft:sculk_vein run function lotto
 
 # Level 1 - Intro ("Loading Screen")
 execute as @a[tag=intro] run function intro
