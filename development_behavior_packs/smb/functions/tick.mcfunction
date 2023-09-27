@@ -11,6 +11,8 @@ execute at @a[tag=init] run tp @e[name=main,c=1] ~ ~ ~ facing ^ ^ ^10
 
 # ? Block
 execute at @a[tag=!lotto] if block ~ ~1.8 ~ minecraft:brown_glazed_terracotta run function lotto
+# (Hidden) ? Block
+execute at @a[tag=!lotto] if block ~ ~1.8 ~ minecraft:glow_lichen run function lotto
 
 # Level 1 - Intro ("Loading Screen")
 execute as @a[tag=intro] run function intro
