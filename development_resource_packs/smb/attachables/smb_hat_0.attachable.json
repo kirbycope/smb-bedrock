@@ -2,7 +2,7 @@
 	"format_version": "1.10.0",
 	"minecraft:attachable": {
 		"description": {
-			"identifier": "kirbycope:smb_hat",
+			"identifier": "kirbycope:smb_hat_0",
 			"render_controllers": ["controller.render.armor"],
 			"materials": {
 				"default": "entity_alphatest",
@@ -10,7 +10,6 @@
 			},
 			"textures": {
 				"default": "textures/entity/attachable/smb_hat_0",
-				"1": "textures/entity/attachable/smb_hat_1",
 				"enchanted": "textures/misc/enchanted_item_glint"
 			},
 			"geometry": {

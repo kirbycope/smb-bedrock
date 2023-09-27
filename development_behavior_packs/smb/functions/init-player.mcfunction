@@ -1,4 +1,4 @@
-#gamerule sendcommandfeedback false
+gamerule sendcommandfeedback false
 gamerule dodaylightcycle false
 gamerule doweathercycle false
 tp @s 3 65 0
@@ -20,7 +20,7 @@ effect @s haste 9999 1 true
 # [w][s][a][d] detection
 kill @e[type=armor_stand,name=main]
 summon armor_stand main ~ ~ ~
-#effect @e[type=armor_stand,name=main] invisibility 9999 1
+effect @e[type=armor_stand,name=main] invisibility 9999 1 true
 
 # Tag the player so this only runs once
 tag @s add init
