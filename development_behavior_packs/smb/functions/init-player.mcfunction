@@ -1,7 +1,7 @@
 gamerule sendcommandfeedback false
 gamerule dodaylightcycle false
 gamerule doweathercycle false
-tp @s 3 65 0
+teleport @s 3 65 0 facing 3 65 -1
 clear @s
 
 # "Loading" screen
