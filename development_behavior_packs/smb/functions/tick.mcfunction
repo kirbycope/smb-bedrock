@@ -2,10 +2,7 @@
 execute as @a[tag=!init] run function init-player
 
 # WASD detection
-#execute at @e[type=armor_stand,name=main] positioned ^^^1 as @e[r=0.9] run say "w"
-#execute at @e[type=armor_stand,name=main] positioned ^1^^ as @e[r=0.9] run say "a"
 execute at @e[type=armor_stand,name=main] positioned ^1^^ as @e[r=0.9] run replaceitem entity @s slot.armor.head 1 kirbycope:smb_hat_1
-#execute at @e[type=armor_stand,name=main] positioned ^^^1 as @e[r=0.9] run say "s"
 execute at @e[type=armor_stand,name=main] positioned ^-1^^ as @e[r=0.9] run replaceitem entity @s slot.armor.head 1 kirbycope:smb_hat_0
 execute at @a[tag=init] run tp @e[name=main,c=1] ~ ~ ~ facing ^ ^ ^10
 

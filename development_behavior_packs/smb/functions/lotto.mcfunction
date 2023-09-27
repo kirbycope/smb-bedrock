@@ -13,7 +13,7 @@ execute as @a[x=22,y=66,z=0,r=1] run setblock 22 68 0 minecraft:yellow_glazed_te
 execute as @a[x=22,y=66,z=0,r=1] run playsound random.pop
 # (Hidden) [🍄] 62 70 0
 execute as @a[x=62,y=68,z=0,r=1] run setblock 62 70 0 minecraft:yellow_glazed_terracotta
-execute as @a[x=62,y=68,z=0,r=1] run playsound random.pop
+execute as @a[x=62,y=68,z=0,r=1] run playsound random.pop2
 execute as @a[x=62,y=68,z=0,r=1] run teleport ~ ~-0.2 ~
 # [?] 75 68 0
 execute as @a[x=75,y=66,z=0,r=1] run setblock 75 68 0 minecraft:yellow_glazed_terracotta
