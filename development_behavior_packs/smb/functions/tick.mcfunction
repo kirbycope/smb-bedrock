@@ -28,7 +28,7 @@ execute as @a[scores={crouching=0,facing=0,jumping=1},tag=!intro,tag=!outro] run
 execute as @a[scores={crouching=0,facing=1,jumping=1},tag=!intro,tag=!outro] run replaceitem entity @s slot.armor.head 1 kirbycope:smb_hat_6
 
 # ⍰
-execute at @a[tag=init] if block ~ ~1.8 ~ minecraft:brown_glazed_terracotta run function lotto
+execute at @a[tag=init] if block ~ ~1.8 ~ minecraft:black_stained_glass run function lotto
 # ⍰ (Hidden) 
 execute at @a[tag=init] if block ~ ~1.8 ~ minecraft:glow_lichen run function lotto
 # 🪙
