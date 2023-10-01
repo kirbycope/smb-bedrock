@@ -1,5 +1,6 @@
 execute as @a[scores={timer=0}] run scoreboard players set @s timer 1
 
+execute as @a[scores={timer=1}] run function resetw1l1
 execute as @a[scores={timer=1}] run camera @s set minecraft:first_person
 execute as @a[scores={timer=1}] run replaceitem entity @s slot.armor.head 1 minecraft:carved_pumpkin
 
