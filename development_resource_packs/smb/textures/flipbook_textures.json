@@ -1,12 +1,21 @@
 [
     {
-        "flipbook_texture": "textures/blocks/glazed_terracotta_brown",
-        "atlas_tile": "brown_glazed_terracotta",
+        "flipbook_texture": "textures/blocks/concrete_powder_black",
+        "atlas_tile": "black_concrete_powder",
+        "ticks_per_frame": 4
+    },{
+        "flipbook_texture": "textures/blocks/glass_black",
+        "atlas_tile": "black_stained_glass",
         "ticks_per_frame": 4
     },
     {
         "flipbook_texture": "textures/blocks/sculk_vein",
         "atlas_tile": "sculk_vein",
+        "ticks_per_frame": 4
+    },
+    {
+        "flipbook_texture": "textures/blocks/slime",
+        "atlas_tile": "slime_block",
         "ticks_per_frame": 4
     }
 ]

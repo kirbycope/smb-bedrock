@@ -1,0 +1,7 @@
+{
+    "slime" : {
+        "blockshape": "frame",
+        "sound" : "slime",
+        "textures" : "slime_block"
+     }
+}
