@@ -29,6 +29,9 @@ execute as @a[scores={crouching=0,facing=1,jumping=1},tag=!intro,tag=!outro,tag=
 
 # ⍰
 execute at @a[tag=init] if block ~ ~1.8 ~ minecraft:black_stained_glass run function lotto
+# 🧱
+execute at @a[tag=init] if block ~ ~1.8 ~ minecraft:blue_concrete run setblock ~ ~1.8 ~ minecraft:air destroy
+kill @e[type=item]
 # ⍰ (Hidden) 
 execute at @a[tag=init] if block ~ ~1.8 ~ minecraft:glow_lichen run function lotto
 # 🪙

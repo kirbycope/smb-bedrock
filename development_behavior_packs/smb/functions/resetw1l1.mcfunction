@@ -1,9 +1,15 @@
 # ⍰
 setblock 15 68 0 minecraft:black_stained_glass
+# 🧱
+setblock 19 68 0 minecraft:blue_concrete
 # ⍰ > 🍄
 setblock 20 68 0 minecraft:black_stained_glass
+# 🧱
+setblock 21 68 0 minecraft:blue_concrete
 # ⍰
 setblock 21 72 0 minecraft:black_stained_glass
+# 🧱
+setblock 23 68 0 minecraft:blue_concrete
 # ⍰
 setblock 22 68 0 minecraft:black_stained_glass
 # 🪙 .
