@@ -41,7 +41,7 @@ execute as @a[tag=intro] run function intro
 execute as @a[tag=!warp11in,x=54.5,y=69,z=0,r=1] run execute as @a at @s positioned ~ ~1.5 ~ unless entity @s[dx=0] run tag @s add warp11in
 execute as @a[tag=warp11in] run function warp11in
 # Level 1 - Warp Pipe Out
-execute as @a[tag=!warp11out,x=62,y=52,z=0,r=0.8] run tag @s add warp11out
+execute as @a[tag=!warp11out,x=62,y=50,z=0,r=0.8] run tag @s add warp11out
 execute as @a[tag=warp11out] run function warp11out
 # Level 1 - Outro (Flag Pole)
 execute as @a[tag=!outro,x=196,y=66,z=0,r=1] run tag @s add outro
