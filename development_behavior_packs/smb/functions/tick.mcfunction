@@ -15,17 +15,17 @@ scoreboard players set @a[tag=init] jumping 0
 execute at @a if block ~ ~-1 ~ minecraft:air run scoreboard players set @a[tag=init] jumping 1
 
 # Standing, looking right
-execute as @a[scores={crouching=0,facing=0,jumping=0},tag=!intro,tag=!outro] run replaceitem entity @s slot.armor.head 1 kirbycope:smb_hat_0
+execute as @a[scores={crouching=0,facing=0,jumping=0},tag=!intro,tag=!outro,tag=!timeout] run replaceitem entity @s slot.armor.head 1 kirbycope:smb_hat_0
 # Standing, looking left
-execute as @a[scores={crouching=0,facing=1,jumping=0},tag=!intro,tag=!outro] run replaceitem entity @s slot.armor.head 1 kirbycope:smb_hat_1
+execute as @a[scores={crouching=0,facing=1,jumping=0},tag=!intro,tag=!outro,tag=!timeout] run replaceitem entity @s slot.armor.head 1 kirbycope:smb_hat_1
 # Crouching, looking right
-execute as @a[scores={crouching=1,facing=0},tag=!intro,tag=!outro] run replaceitem entity @s slot.armor.head 1 kirbycope:smb_hat_3
+execute as @a[scores={crouching=1,facing=0},tag=!intro,tag=!outro,tag=!timeout] run replaceitem entity @s slot.armor.head 1 kirbycope:smb_hat_3
 # Crouching, looking left
-execute as @a[scores={crouching=1,facing=1},tag=!intro,tag=!outro] run replaceitem entity @s slot.armor.head 1 kirbycope:smb_hat_4
+execute as @a[scores={crouching=1,facing=1},tag=!intro,tag=!outro,tag=!timeout] run replaceitem entity @s slot.armor.head 1 kirbycope:smb_hat_4
 # Jumping, looking right
-execute as @a[scores={crouching=0,facing=0,jumping=1},tag=!intro,tag=!outro] run replaceitem entity @s slot.armor.head 1 kirbycope:smb_hat_5
+execute as @a[scores={crouching=0,facing=0,jumping=1},tag=!intro,tag=!outro,tag=!timeout] run replaceitem entity @s slot.armor.head 1 kirbycope:smb_hat_5
 # Jumping, looking left
-execute as @a[scores={crouching=0,facing=1,jumping=1},tag=!intro,tag=!outro] run replaceitem entity @s slot.armor.head 1 kirbycope:smb_hat_6
+execute as @a[scores={crouching=0,facing=1,jumping=1},tag=!intro,tag=!outro,tag=!timeout] run replaceitem entity @s slot.armor.head 1 kirbycope:smb_hat_6
 
 # ⍰
 execute at @a[tag=init] if block ~ ~1.8 ~ minecraft:black_stained_glass run function lotto
