@@ -1,6 +1,7 @@
-gamerule sendcommandfeedback false
 gamerule dodaylightcycle false
 gamerule doweathercycle false
+gamerule falldamage false
+gamerule sendcommandfeedback false
 teleport @s 3 65 0 facing 3 65 -1
 clear @s
 

@@ -33,8 +33,7 @@ execute at @a[tag=init] if block ~ ~1.8 ~ minecraft:black_stained_glass run func
 execute at @a[tag=init] if block ~ ~1.8 ~ minecraft:blue_concrete run playsound random.break @p
 execute at @a[tag=init] if block ~ ~1.8 ~ minecraft:blue_concrete run setblock ~ ~1.8 ~ minecraft:air destroy
 kill @e[type=item]
-# ⍰ (Hidden) 
-
+# ⍰ (Hidden)
 execute at @a[tag=init] if block ~ ~1.8 ~ minecraft:glow_lichen run function lotto
 # 🪙
 execute at @a[tag=init] if block ~ ~ ~ minecraft:sculk_vein run function lotto
@@ -60,6 +59,9 @@ execute as @a[scores={countdown=1..}] run function timer
 
 # Running out of time warning (100 remaining)
 execute as @a[scores={countdown=2000}] run playsound record.cat @a
+
+# Kill falling player
+execute as @a at @s run tag @a[y=46,dy=-2] add timeout
 
 # Kill timed out player
 tag @a[scores={countdown=0}] add timeout
