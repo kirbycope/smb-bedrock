@@ -1,4 +1,4 @@
- # Create an objective to track if the world has been loaded
+# Create an objective to track if the world has been loaded
 scoreboard objectives add world dummy
 
 # Add 0 to the fake player named "initialized" (setting to 0 if null)

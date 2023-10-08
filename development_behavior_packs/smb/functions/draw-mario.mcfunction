@@ -1,7 +1,7 @@
 # Mario Small - Standing, looking right
-execute as @s[scores={facing=0,jumping=0,size=0}] run replaceitem entity @s slot.armor.head 1 kirbycope:smb_hat_00
+execute as @s[scores={crouching=0,facing=0,jumping=0,size=0}] run replaceitem entity @s slot.armor.head 1 kirbycope:smb_hat_00
 # Mario Small - Standing, looking left
-execute as @s[scores={facing=1,jumping=0,size=0}] run replaceitem entity @s slot.armor.head 1 kirbycope:smb_hat_01
+execute as @s[scores={crouching=0,facing=1,jumping=0,size=0}] run replaceitem entity @s slot.armor.head 1 kirbycope:smb_hat_01
 # Mario Small - Crouching, looking right
 execute as @s[scores={crouching=1,facing=0,size=0}] run replaceitem entity @s slot.armor.head 1 kirbycope:smb_hat_03
 # Mario Small - Crouching, looking left
