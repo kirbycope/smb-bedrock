@@ -12,26 +12,17 @@ execute as @a at @s positioned ~ ~1.5 ~ if entity @s[dx=0] run scoreboard player
 
 # Jump detection (0=false, true=1)
 scoreboard players set @a[tag=init] jumping 0
-execute at @a if block ~ ~-1 ~ minecraft:air run scoreboard players set @a[tag=init] jumping 1
+execute at @a if block ~ ~-1 ~ minecraft:air run scoreboard players set @p jumping 1
 
-# Standing, looking right
-execute as @a[scores={crouching=0,facing=0,jumping=0},tag=!intro,tag=!outro,tag=!timeout] run replaceitem entity @s slot.armor.head 1 kirbycope:smb_hat_0
-# Standing, looking left
-execute as @a[scores={crouching=0,facing=1,jumping=0},tag=!intro,tag=!outro,tag=!timeout] run replaceitem entity @s slot.armor.head 1 kirbycope:smb_hat_1
-# Crouching, looking right
-execute as @a[scores={crouching=1,facing=0},tag=!intro,tag=!outro,tag=!timeout] run replaceitem entity @s slot.armor.head 1 kirbycope:smb_hat_3
-# Crouching, looking left
-execute as @a[scores={crouching=1,facing=1},tag=!intro,tag=!outro,tag=!timeout] run replaceitem entity @s slot.armor.head 1 kirbycope:smb_hat_4
-# Jumping, looking right
-execute as @a[scores={crouching=0,facing=0,jumping=1},tag=!intro,tag=!outro,tag=!timeout] run replaceitem entity @s slot.armor.head 1 kirbycope:smb_hat_5
-# Jumping, looking left
-execute as @a[scores={crouching=0,facing=1,jumping=1},tag=!intro,tag=!outro,tag=!timeout] run replaceitem entity @s slot.armor.head 1 kirbycope:smb_hat_6
+# Draw characater
+execute as @a[tag=mario,tag=!intro,tag=!outro,tag=!timeout] run function draw-mario
+execute as @a[tag=luigi,tag=!intro,tag=!outro,tag=!timeout] run function draw-luigi
 
 # ⍰
 execute at @a[tag=init] if block ~ ~1.8 ~ minecraft:black_stained_glass run function lotto
 # 🧱
-execute at @a[tag=init] if block ~ ~1.8 ~ minecraft:blue_concrete run playsound random.break @p
-execute at @a[tag=init] if block ~ ~1.8 ~ minecraft:blue_concrete run setblock ~ ~1.8 ~ minecraft:air destroy
+execute at @a[scores={size=1},tag=init] if block ~ ~1.8 ~ minecraft:blue_concrete run playsound random.break @p
+execute at @a[scores={size=1},tag=init] if block ~ ~1.8 ~ minecraft:blue_concrete run setblock ~ ~1.8 ~ minecraft:air destroy
 kill @e[type=item]
 # ⍰ (Hidden)
 execute at @a[tag=init] if block ~ ~1.8 ~ minecraft:glow_lichen run function lotto
@@ -52,13 +43,13 @@ execute as @a[tag=!outro,x=196,y=66,z=0,r=1] run tag @s add outro
 execute as @a[tag=outro] run function outro
 
 # Decrement countdown if running and level not beat
-execute as  @a[scores={countdown=0..,w1l1=0},tag=!intro] run scoreboard players add @a countdown -1
+execute as @a[scores={countdown=0..,w1l1=0},tag=!intro] run scoreboard players add @s countdown -1
 
 # Update TIME based on countdown
 execute as @a[scores={countdown=1..}] run function timer
 
 # Running out of time warning (100 remaining)
-execute as @a[scores={countdown=2000}] run playsound record.cat @a
+execute as @a[scores={countdown=2000}] run playsound record.cat @s
 
 # Kill falling player
 execute as @a at @s run tag @a[y=46,dy=-2] add timeout
@@ -68,10 +59,10 @@ tag @a[scores={countdown=0}] add timeout
 execute as @a[tag=timeout] run function timeout
 
 # Increment timer if running
-execute as @a[scores={timer=1..}] run scoreboard players add @a timer 1
+execute as @a[scores={timer=1..}] run scoreboard players add @s timer 1
 
 # Reset player if they run all the way left
-execute as @a[x=-1,y=65,z=0,r=1.5] run tag @s remove init
+execute as @a[x=-1,y=65,z=0,r=1.5] run tag @s add intro
 
 # Reset player if they run all the way right
-execute as @a[x=222,y=65,z=0,r=1.5] run tag @s remove init
+execute as @a[x=222,y=65,z=0,r=1.5] run tag @s add intro

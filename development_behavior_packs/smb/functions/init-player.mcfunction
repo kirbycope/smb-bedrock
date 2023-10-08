@@ -1,41 +1,22 @@
-gamerule dodaylightcycle false
-gamerule doweathercycle false
-gamerule falldamage false
-gamerule sendcommandfeedback false
-teleport @s 3 65 0 facing 3 65 -1
-clear @s
+# Determine player
+scoreboard objectives add player dummy
+scoreboard players add initialized player 0
+execute if score initialized player matches 0 run tag @s add mario
+execute if score initialized player matches 1 run tag @s add luigi
+scoreboard players set initialized player 1
 
-# Crouching - Tracks if the player is crouching (0=false, 1=true)
-scoreboard objectives add crouching dummy
+# Player scoreboards
 scoreboard players set @s crouching 0
-
-# Countdown - The time left in in-game ticks ticks (20 per second)
-scoreboard objectives add countdown dummy
 scoreboard players set @s countdown 8000
-
-# Facing - Tracks the direction the player is facing (0=right,1=left)
-scoreboard objectives add facing dummy
 scoreboard players set @s facing 0
-
-# Jumping - Tracks if the player is jumping (0=false, 1=true)
-scoreboard objectives add jumping dummy
 scoreboard players set @s jumping 0
-
-# TIME - The time left in real time seconds
-scoreboard objectives add TIME dummy
+scoreboard players set @s size 0
 scoreboard players set @s TIME 0
-scoreboard objectives setdisplay sidebar TIME
-
-# Timer - An animation and event timer
-scoreboard objectives add timer dummy
 scoreboard players set @s timer 0
-
-# "Loading" screen
-tag @s add intro
-
-# World 1-1
-scoreboard objectives add w1l1 dummy
 scoreboard players set @s w1l1 0
+
+# Initial position - World 1 Level 1
+teleport @s 3 65 0 facing 3 65 -1
 
 # SMB Buffs
 effect @s invisibility 9999 1 true
@@ -46,6 +27,9 @@ effect @s haste 9999 1 true
 kill @e[type=armor_stand,name=main]
 summon armor_stand main ~ ~ ~
 effect @e[type=armor_stand,name=main] invisibility 9999 1 true
+
+# Run the Intro for the new player
+tag @s add intro
 
 # Tag the player so this only runs once
 tag @s add init

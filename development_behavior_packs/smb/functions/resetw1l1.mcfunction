@@ -1,3 +1,11 @@
+# Reset player
+clear @s
+effect @s instant_health 1 255 true
+effect @s saturation 1 255 true
+scoreboard players set @s countdown 8000
+scoreboard players set @s size 0
+teleport @s 3 65 0 facing 3 65 -1
+
 # ⍰
 setblock 15 68 0 minecraft:black_stained_glass
 # 🧱
