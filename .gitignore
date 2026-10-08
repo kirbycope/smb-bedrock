@@ -4,3 +4,6 @@ minecraftWorlds/
 resource_packs/
 world_templates/
 *.dat
+
+# the release build, written by tools/build_addon.py
+/build/
