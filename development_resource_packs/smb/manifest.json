@@ -4,18 +4,18 @@
 		"name": "Super Mario Bros",
 		"description": "Super Mario Bros Resource Pack",
 		"uuid": "caeae8d1-61ae-f42f-2216-c98b4ab7945c",
-		"version": [1, 0, 0],
-		"min_engine_version": [1, 20, 30]
+		"version": [1, 1, 0],
+		"min_engine_version": [1, 26, 0]
 	},
 	"metadata": {
-		"authors": ["kirbycope"]
+		"authors": ["Kirbycope"]
 	},
 	"modules": [
 		{
 			"description": "Super Mario Bros",
 			"type": "resources",
 			"uuid": "27541c4d-1b11-9a5c-9a52-c703e326f551",
-			"version": [1, 0, 0]
+			"version": [1, 1, 0]
 		}
 	]
 }
